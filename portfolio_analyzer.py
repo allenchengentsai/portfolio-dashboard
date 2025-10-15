@@ -41,6 +41,11 @@ class PortfolioAnalyzer:
             'x-api-key': self.claude_api_key,
             'anthropic-version': '2023-06-01'
         })
+        
+        # Add debugging to check API connection
+        if DEBUG_MODE:
+            logger.debug(f"API Key present: {bool(self.claude_api_key)}")
+            logger.debug(f"Using model: {CLAUDE_MODEL}")
     
     def load_portfolio(self) -> List[Dict]:
         """Load portfolio tickers from file"""
@@ -228,7 +233,13 @@ class PortfolioAnalyzer:
                     logger.error(f"Failed to parse JSON for {stock_data['ticker']}: {e}")
                     return self._create_fallback_analysis(stock_data, position_data)
             else:
-                logger.error(f"Claude API error for {stock_data['ticker']}: {response.status_code}")
+                error_detail = ""
+                try:
+                    error_response = response.json()
+                    error_detail = f" - {error_response.get('error', {}).get('message', response.text[:200])}"
+                except:
+                    error_detail = f" - {response.text[:200]}"
+                logger.error(f"Claude API error for {stock_data['ticker']}: {response.status_code}{error_detail}")
                 return self._create_fallback_analysis(stock_data, position_data)
                 
         except Exception as e:
