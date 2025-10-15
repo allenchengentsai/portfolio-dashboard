@@ -299,8 +299,8 @@ class PortfolioAnalyzer:
             <title>Portfolio Analysis Dashboard - Peter Lynch Style</title>
             <style>
                 /* Include the CSS from the earlier template */
-                body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 20px; background-color: #f8f9fa; }
-                .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+                body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 20px; background-color: #f8f9fa; }}
+                .header {{ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }}
                 /* ... rest of CSS ... */
             </style>
         </head>
@@ -341,17 +341,17 @@ class PortfolioAnalyzer:
             </div>
             
             <script>
-                function toggleDetails(stockId) {{
+                function toggleDetails(stockId) {{{{
                     const details = document.getElementById(stockId + '-details');
-                    if (details.classList.contains('show')) {{
+                    if (details.classList.contains('show')) {{{{
                         details.classList.remove('show');
-                    }} else {{
-                        document.querySelectorAll('.expanded-details.show').forEach(el => {{
+                    }}}} else {{{{
+                        document.querySelectorAll('.expanded-details.show').forEach(el => {{{{
                             el.classList.remove('show');
-                        }});
+                        }}}});
                         details.classList.add('show');
-                    }}
-                }}
+                    }}}}
+                }}}}
             </script>
         </body>
         </html>
