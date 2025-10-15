@@ -1,0 +1,406 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Portfolio Analysis Dashboard - Peter Lynch Style</title>
+            <style>
+                /* Include the CSS from the earlier template */
+                body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 20px; background-color: #f8f9fa; }
+                .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+                /* ... rest of CSS ... */
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h1>Portfolio Analysis Dashboard</h1>
+                <p>Peter Lynch Style Analysis - Updated: 2025-10-15 06:49:49 EST</p>
+            </div>
+            
+            <div class="portfolio-summary">
+                <div class="summary-card">
+                    <h3>Total Portfolio Value</h3>
+                    <div class="value">$301,239</div>
+                </div>
+                <div class="summary-card">
+                    <h3>Stocks with Alerts</h3>
+                    <div class="value" style="color: #dc3545;">0 🚨</div>
+                </div>
+            </div>
+            
+            <div class="stocks-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Stock</th>
+                            <th>Price/Change</th>
+                            <th>Position</th>
+                            <th>Gain %</th>
+                            <th>Alerts</th>
+                            <th>Lynch Score</th>
+                            <th>Next Events</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+            <tr class="stock-row" onclick="toggleDetails('RKLB')">
+                <td>RKLB</td>
+                <td>$68.03</td>
+                <td>$40,274</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('PLTR')">
+                <td>PLTR</td>
+                <td>$179.74</td>
+                <td>$35,948</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('IONQ')">
+                <td>IONQ</td>
+                <td>$77.55</td>
+                <td>$23,265</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('UNH')">
+                <td>UNH</td>
+                <td>$359.93</td>
+                <td>$16,197</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('ENVX')">
+                <td>ENVX</td>
+                <td>$12.87</td>
+                <td>$15,444</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('MSFT')">
+                <td>MSFT</td>
+                <td>$513.57</td>
+                <td>$15,407</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('ASTS')">
+                <td>ASTS</td>
+                <td>$94.50</td>
+                <td>$14,175</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('CRWD')">
+                <td>CRWD</td>
+                <td>$488.94</td>
+                <td>$12,224</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('AMD')">
+                <td>AMD</td>
+                <td>$218.09</td>
+                <td>$10,904</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('TSLA')">
+                <td>TSLA</td>
+                <td>$429.24</td>
+                <td>$10,731</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('META')">
+                <td>META</td>
+                <td>$708.65</td>
+                <td>$10,630</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('ACHR')">
+                <td>ACHR</td>
+                <td>$13.02</td>
+                <td>$10,416</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('AAPL')">
+                <td>AAPL</td>
+                <td>$247.77</td>
+                <td>$9,911</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('NFLX')">
+                <td>NFLX</td>
+                <td>$1215.35</td>
+                <td>$9,723</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('NET')">
+                <td>NET</td>
+                <td>$217.55</td>
+                <td>$7,614</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('CRM')">
+                <td>CRM</td>
+                <td>$239.77</td>
+                <td>$5,994</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('RDW')">
+                <td>RDW</td>
+                <td>$9.54</td>
+                <td>$4,770</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('KOPN')">
+                <td>KOPN</td>
+                <td>$3.94</td>
+                <td>$4,728</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('AMZN')">
+                <td>AMZN</td>
+                <td>$216.39</td>
+                <td>$4,328</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('ADBE')">
+                <td>ADBE</td>
+                <td>$335.94</td>
+                <td>$4,031</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('SNOW')">
+                <td>SNOW</td>
+                <td>$240.83</td>
+                <td>$3,612</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('DDOG')">
+                <td>DDOG</td>
+                <td>$160.88</td>
+                <td>$3,218</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('ZM')">
+                <td>ZM</td>
+                <td>$79.32</td>
+                <td>$3,173</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('MDB')">
+                <td>MDB</td>
+                <td>$313.81</td>
+                <td>$3,138</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('SHOP')">
+                <td>SHOP</td>
+                <td>$152.88</td>
+                <td>$3,058</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('ROKU')">
+                <td>ROKU</td>
+                <td>$94.40</td>
+                <td>$2,832</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('NVDA')">
+                <td>NVDA</td>
+                <td>$180.03</td>
+                <td>$2,700</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('GOOGL')">
+                <td>GOOGL</td>
+                <td>$245.45</td>
+                <td>$2,454</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('PYPL')">
+                <td>PYPL</td>
+                <td>$69.15</td>
+                <td>$2,420</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('OKTA')">
+                <td>OKTA</td>
+                <td>$89.08</td>
+                <td>$2,227</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('DOCU')">
+                <td>DOCU</td>
+                <td>$68.36</td>
+                <td>$2,051</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('PINS')">
+                <td>PINS</td>
+                <td>$33.12</td>
+                <td>$1,656</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('TWLO')">
+                <td>TWLO</td>
+                <td>$108.10</td>
+                <td>$1,621</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+            <tr class="stock-row" onclick="toggleDetails('ENPH')">
+                <td>ENPH</td>
+                <td>$36.44</td>
+                <td>$364</td>
+                <td>0.0%</td>
+                <td>0</td>
+                <td>HOLD</td>
+                <td>Next events...</td>
+            </tr>
+            
+                    </tbody>
+                </table>
+            </div>
+            
+            <script>
+                function toggleDetails(stockId) {{
+                    const details = document.getElementById(stockId + '-details');
+                    if (details.classList.contains('show')) {{
+                        details.classList.remove('show');
+                    }} else {{
+                        document.querySelectorAll('.expanded-details.show').forEach(el => {{
+                            el.classList.remove('show');
+                        }});
+                        details.classList.add('show');
+                    }}
+                }}
+            </script>
+        </body>
+        </html>
+        
