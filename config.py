@@ -28,7 +28,11 @@ ALERT_THRESHOLD_GAIN = 1000  # Alert if gain % exceeds this (for trim recommenda
 ALERT_THRESHOLD_LOSS = -20  # Alert if loss % exceeds this
 
 # API Configuration
-CLAUDE_MODEL = "claude-3-5-sonnet-20241022"  # Latest Claude model
+CLAUDE_MODEL = "claude-3-5-sonnet-20240620"  # Claude 3.5 Sonnet (June 2024)
+# Alternative models to try if above doesn't work:
+# "claude-3-5-sonnet-20241022" - October 2024 version (if available)
+# "claude-3-opus-20240229" - Most capable Claude 3 model
+# "claude-3-sonnet-20240229" - Balanced Claude 3 model
 MAX_TOKENS_PER_STOCK = 4000  # Limit output length per stock
 RATE_LIMIT_DELAY = 1  # Seconds between API calls to avoid rate limits
 
